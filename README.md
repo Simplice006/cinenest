@@ -2,7 +2,7 @@
 
 A MovieBox-inspired movie and TV show discovery web app (frontend only), built for the *Web and Mobile Application Development* practical assignment.
 
-**Live app:** _add your Vercel/Netlify link here_
+**Live app:** https://cinenest-sigma.vercel.app/
 **Screenshots:** see `screenshots/` (homepage and details view)
 
 ## Technologies
@@ -14,15 +14,7 @@ A MovieBox-inspired movie and TV show discovery web app (frontend only), built f
 - `fetch` for API calls
 - **TMDB API** - https://www.themoviedb.org
 
-## Features
 
-- **Homepage**: top bar with logo and search, sidebar (Home, Movies, TV Shows, My Watchlist), five content rows (Trending, Popular Movies, Popular TV Shows, Action Movies, Top Rated), dark theme and hover effects
-- **Live data** from TMDB (nothing hard-coded); missing posters, ratings, dates and overviews are handled
-- **Search** by title (`/search/multi`) with loading, empty-result and error states
-- **Details page** (`/movie/:id`, `/tv/:id`): poster, overview, release date, rating, genres, runtime, cast, trailer link
-- **Movies / TV Shows pages** with a **genre filter**, sorting (popular, rating, newest) and pagination
-- **My Watchlist**: add, view and remove titles; saved in `localStorage` so it survives a refresh
-- **Responsive**: permanent sidebar on desktop, hamburger drawer on tablet/mobile, poster grid from 2 to 7 columns
 
 ## Project structure
 
@@ -43,7 +35,6 @@ The TMDB key is **never** in the frontend code or in the repository. The browser
 
 ```bash
 npm install
-cp .env.example .env     # then put your own TMDB key in .env
 npm run dev              # http://localhost:5173
 ```
 
@@ -55,6 +46,4 @@ Get a free key at https://www.themoviedb.org/settings/api (the v3 "API Key").
 2. Import it on Vercel and add the environment variable `TMDB_KEY`.
 3. Deploy. `vercel.json` handles the React Router rewrites.
 
-## Attribution
 
-This product uses the TMDB API but is not endorsed or certified by TMDB. Movie data and images are provided by [TMDB](https://www.themoviedb.org).
